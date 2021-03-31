@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="asset_ori" max_length="40" name="x_58872_needit_asset_ori" sizeclass="0" type="collection">
+        <element label="id" max_length="50" name="id" type="string"/>
+        <element label="name" max_length="50" name="name" type="string"/>
+    </element>
+</database>

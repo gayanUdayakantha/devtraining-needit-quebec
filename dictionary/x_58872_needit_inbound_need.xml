@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="inbound_need" max_length="40" name="x_58872_needit_inbound_need" sizeclass="4" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_request_email" label="request_email" max_length="40" name="u_request_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_request_for" label="request_for" max_length="40" name="u_request_for" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_short_description" label="short_description" max_length="40" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_when_date" label="when_date" max_length="40" name="u_when_date" type="string"/>
+    </element>
+</database>

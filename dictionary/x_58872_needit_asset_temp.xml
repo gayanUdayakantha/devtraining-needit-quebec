@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="asset_temp" max_length="40" name="x_58872_needit_asset_temp" sizeclass="2" type="collection">
+        <element label="Asset ID" max_length="10" name="asset_id" type="string"/>
+        <element label="name" max_length="50" name="name" type="string"/>
+    </element>
+</database>

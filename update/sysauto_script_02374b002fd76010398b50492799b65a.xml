@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <name>Get Assets From Another instance</name>
+        <offset/>
+        <offset_type/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2021-03-30 07:15:13</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[try { 
+ var r = new sn_ws.RESTMessageV2('x_58872_needit.dev109115.service-now', 'getAssets');
+
+//override authentication profile 
+//authentication type ='basic'/ 'oauth2'
+//r.setAuthenticationProfile(authentication type, profile name);
+
+//set a MID server name if one wants to run the message on MID
+//r.setMIDServer('MY_MID_SERVER');
+
+//if the message is configured to communicate through ECC queue, either
+//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+//to true. Otherwise, one may get an intermittent error that the response body is null
+//r.setEccParameter('skip_sensor', true);
+
+ var response = r.execute();
+ var responseBody = response.getBody();
+ var httpStatus = response.getStatusCode();
+	
+
+ 
+ var parseData = JSON.parse(responseBody);
+	for(i=0;i<parseData.result.length;i++){
+		gs.info("The Asset Tag  Get Assets From Another instance ==="+parseData.result[i].asset_tag);
+		
+		
+		var assetTemp = new GlideRecord('x_58872_needit_historic_needit_data');
+        assetTemp.initialize();
+        assetTemp.u_requested_for = "System Administrator";
+        assetTemp.u_what_needed = "2021-03-31 12:12:12";
+		assetTemp.short_description = parseData.result[i].asset_tag;
+		assetTemp.u_request_type = "ABC";
+		assetTemp.insert();
+         
+ }
+
+// gs.info("ParseDemo "+responseBody);
+
+	
+}
+catch(ex) {
+ var message = ex.message;
+ gs.info("Errporrr Get Assets From Another instance  "+message);
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-30 07:18:06</sys_created_on>
+        <sys_id>02374b002fd76010398b50492799b65a</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Get Assets From Another instance</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sysauto_script_02374b002fd76010398b50492799b65a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 04:59:17</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>incident test [ Default GET ]</qualified_name>
+        <rest_endpoint>http://test/incident</rest_endpoint>
+        <rest_message display_value="incident test">5bbd5a3b2f8b2010398b50492799b6ba</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-29 09:36:31</sys_created_on>
+        <sys_id>42fddaf72f8b2010398b50492799b69e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_rest_message_fn_42fddaf72f8b2010398b50492799b69e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-29 09:36:31</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>c66b46c6dbe173042f68c597059619ac</instance_id>
+        <instance_name>dev86285</instance_name>
+        <name>sys_rest_message_fn_42fddaf72f8b2010398b50492799b69e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>incident test [ Default GET ]</qualified_name><rest_endpoint>http://test/incident</rest_endpoint><rest_message display_value="incident test">5bbd5a3b2f8b2010398b50492799b6ba</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-29 09:36:31</sys_created_on><sys_id>42fddaf72f8b2010398b50492799b69e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_rest_message_fn_42fddaf72f8b2010398b50492799b69e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-29 09:36:31</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>1024951398</payload_hash>
+        <record_name>Default GET</record_name>
+        <reverted_from/>
+        <source>f141a28c2f032010398b50492799b602</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-29 09:36:31</sys_created_on>
+        <sys_id>0afddaf72f8b2010398b50492799b6a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1787d57878d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-29 09:36:31</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>42fddaf79e8b2010eca08844af177aa0</update_guid>
+        <update_guid_history>42fddaf79e8b2010eca08844af177aa0:1024951398</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-30 06:02:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>101eb792d1c741c0939e5bdc55646389</sys_id>
+        <sys_metadata>42fddaf72f8b2010398b50492799b69e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_42fddaf72f8b2010398b50492799b69e</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_42fddaf72f8b2010398b50492799b69e">0afddaf72f8b2010398b50492799b6a0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-30 06:02:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
