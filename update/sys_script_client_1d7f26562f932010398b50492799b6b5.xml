@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>complete</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>TEst Clident NeedIT</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+  
+	var ga = new GlideAjax("DemoScriptInclude");
+	ga.addParam('sysparm_name','testData');
+	//ga.addParam('sysparm_user_name',"Bob");
+	ga.getXML(HelloWorldParse);
+
+	function HelloWorldParse(response) {
+
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	alert(answer);
+
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-06 05:18:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1d7f26562f932010398b50492799b6b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TEst Clident NeedIT</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_1d7f26562f932010398b50492799b6b5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-06 05:30:06</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
